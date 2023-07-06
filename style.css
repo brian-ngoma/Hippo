@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Mobile container */
+
+  /* Nav bar*/
+
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.topnav img {
+    height: 3.5rem;
+    
+}
+
+
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: px; /* height for drop dowm */
+  color: white;
+  border-radius: 10px;
+  border: 2px solid reds;
+
+}
+  
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+  
+.topnav #myLinks {
+  display: none;
+}
+  
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+  
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+  
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+.active {
+  background-color: white;
+  color: white;
+}
+
+@media screen and (max-width:400px) {
+  .topnav img {
+    height: 3rem;
+  }
+  .mobile-container {
+    max-width: 100%;
+    
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .topnav img {
+    height: 5rem;
+  }
+
+  .fa {
+    
+    font-size: 40px;
+  }
+  .mobile-container {
+    max-width: 100%;
+    
+  }
+}
+
+
+  /* Home */
+.home {
+  padding-block: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home p {
+  font-size: x-large;
+  word-wrap: break-word;
+}
+
+.home img {
+  width: 110px;
+  margin-block: 3rem;
+}
+
+.home img:hover {
+  transform: scale(1.3);
+  transition: ease-in-out .5s;
+  cursor: pointer;
+    
+}
+
+.picGrid {
+  grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width:375px) {
+  .home img {
+    width: 110px;
+    margin-block: 2rem;
+  }
+  .home p {
+    font-size: x-large;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .home img {
+    width: 145px;
+    margin-block: 2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .home img {
+    width: 170px;
+    margin-block: 2rem;
+  }
+  .picGrid {
+    margin-block: 2rem;
+  }
+  .moto {
+    margin-block: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home img {
+    width: 230px;
+    margin-block: 2rem;
+  }
+}
+  /* About */
+.about {
+  background-color: whitesmoke;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-block: 1rem;
+}
+
+.about p {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+  .about p {
+    padding: 1rem;
+  }
+  
+}
+
+@media screen and (min-width: 480px) {
+  .about p {
+    padding-inline: 4rem;
+  }
+}
+
+  /* Services */
+.services {
+  margin-block: 2rem;
+}
+
+.services h4 {
+  font-size: 1.2rem;
+  padding-block: .5rem;
+}
+
+.service {
+  display: flex;
+  padding-inline: 2rem;
+  justify-content: space-around;
+  margin-block: 2rem;
+}
+
+.offer {
+  line-height: 2rem;
+}
+
+.cost {
+  min-width: 12rem;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+  border: 1px solid lightgrey;
+}
+
+.cost h4 {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service {
+    padding-inline: 1rem;
+    line-height: 1.5;
+    border-bottom: #333;
+  }
+
+  .offer {
+    margin-block: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service {
+    padding-inline: 1rem;
+    line-height: 1.5;
+    border-bottom: #333;
+  }
+
+  .offer {
+    margin-block: 1rem;
+  }
+}
+
+  /* Testimonials */
+
+.testimonials h2 {
+  margin-block: 3rem;
+}
+
+.testimonials {
+  display: grid;
+  place-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}  
+.card {
+  flex: 0 0 auto;
+  width: 12rem;
+  background-color: lightgrey;
+  border-radius: .7rem;
+  padding: .5rem;
+  margin: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.review p {
+  padding: .5rem;
+}
+
+.fa {
+  font-size: .8rem;
+}
+
+.checked {
+  color: orange;
+}
+
+@media screen (min-width: 600px) {
+  .testimonials {
+    margin-block: 2rem;
+  }
+
+  .card {
+    max-width: 10rem;
+  }
+}
+
+  /* Iorn Man */
+.ironMan {
+  background-color: whitesmoke;
+  display: grid;
+  place-items: center;
+  padding-block: 2rem;
+}
+
+.ironMan img {
+  width: 35rem;
+}
+
+@media screen and (max-width: 600px) {
+  .ironMan img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .ironMan img {
+    width: 45rem;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .ironMan img {
+    
+  }
+}
+  
+  /* Socials */
+.socials h2 {
+  margin-block: 1rem;
+}
+   
+.socials {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+}
+
+.socials p {
+  padding-inline: 6rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+   /* Links */
+.links a {
+  padding-inline: 1rem;
+}
+
+   /* Contact */
+.contact {
+padding-inline: 1.5rem;
+margin-block: 2rem;
+}
+
+.contact h2 {
+  margin: 1rem;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  
+}
+
+form input {
+  display: block;
+  font-size: large;
+  padding: .5rem;
+  border: 2px solid#555;
+  border-radius: .5rem;
+  width: 15rem;
+}
+
+.submit {
+  background-color: black;
+  color: gold;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+label {
+  margin: .5rem; 
+}
+
+.dropdown{
+  font-size: medium;
+  margin: .5rem;
+  border: 2px solid#555;
+}
+
+textarea {
+  width: 15rem;
+  margin-bottom: .5rem;
+
+  border: 2px solid#555;
+  border-radius: .5rem;
+}
+
+@media screen and (min-width: 700px) {
+  form input, textarea {
+    display: block;
+    font-size: large;
+    padding: .5rem;
+    border: 2px solid#555;
+    border-radius: .5rem;
+    width: 35rem;
+    
+  }
+
+  .submit {
+    background-color: black;
+    color: gold;
+    font-size: large;
+    margin: 4rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 600px) {
+  . {
+    
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 600px) {
+  . {
+    
+  }
+}
+
+/* Span */
+
+.span {
+  background-color: white;
+  display: block;
+  height: 4rem;
+}
